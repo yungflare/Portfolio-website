@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" >
+        <title> Daniela's Portfolio</title>
+        <link rel="shortcut icon" href="./img/favicon-32x32.png">
+        <link rel="stylesheet" type="text/css" href="/css/normalize.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Victor+Mono&display=swap" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    </head>
+<body>
+    <header class="page-header">
+        <img src="img/DanielaCodes_2.png" width="100" height="100" alt="daniela codes logo" class="page-header__item">
+        <nav class="main-navigation page-header__item"> 
+            <ul role="menubar" class="navigation-list">
+                <li role="presentation">
+                    <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
+                </li>
+                <li role="presentation">
+                    <a href="about.html" role="menuitem" class="navigation-list__item">About Me</a>   
+                </li>
+                <li role="presentation">
+                    <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+                </li>
+                <li role="presentation">
+                    <a href="work.html" role="menuitem" class="navigation-list__item">Work</a>
+                </li>
+            </ul>
+    </nav>
+    </header>
+<main>
+    <h1> Contact </h1>
+    <div class="container">
+     Phone Number: <a aria-label="tel" href="tel:+15162341134"> +1-516-234-1134 </a> <br>
+    Email:<a href="mailto:blogsforcars@mail.com">Daniela.Codes@mail.com</a>
+    </div>
+        <div class="container">
+            <h2> Fill out form below with any questions :</h2>
+        <!--Send me an email at:<a href="mailto:blogsforcars@cars.com">blogsforcars@cars.com</a> -->
+        <form action="/login-form-action" method="post" id="contact-form">
+
+            <label class="standard-label" for="Name">Name:</label>
+            <input type="text" id="Name" required><br>
+
+            <label class="standard-label" for="contact-email">E-mail:</label>
+            <input type="email" id="contact-email" required> <br>   
+
+            <label class="standard-label" for="Telephone">Phone Number:</label>
+            <input type="tel" id="Telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}" required> <br>
+
+           <label for="my-input">Message</label>
+            <textarea maxlength="140" id="my-input"></textarea>
+            <input type="submit" value="Send">
+        </form>  
+        </div>      
+</main>
+
+<footer class="page-footer">
+    <h3> Find me on: </h3>
+    <div class="social-media">
+    <a href="https://github.com/"><img src="img/Github_icon.svg" alt="Github"></a>
+    <a href="https://instagram.com/"><img src="img/Instagram_icon.svg" alt="Instagram"></a>
+    <a href="https://www.linkedin.com"><img src="img/linkedin_icon.svg" alt="LinkedIn"></a>
+
+    <button type="button">Back to top</button>
+
+    </div>
+   
+</footer>
+<script src="js/tota11y.min.js"></script>
+</body>
+</html>
