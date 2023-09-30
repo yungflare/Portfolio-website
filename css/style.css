@@ -85,8 +85,14 @@ h3 {
     color: var(--Orange);
     font-size: var(--FontSize);
     text-align: var(--TextAlign);
-  
 }
+h3:first-child {
+    color: var(--Orange);
+    font-size: var(--FontSize);
+    text-align: var(--TextAlign);
+    text-decoration: underline;
+}
+
 
 h4 {
     color: var(--Orange);
