@@ -86,12 +86,7 @@ h3 {
     font-size: var(--FontSize);
     text-align: var(--TextAlign);
 }
-h3:nth-child(1) {
-    color: var(--Orange);
-    font-size: var(--FontSize);
-    text-align: var(--TextAlign);
-    text-decoration: underline;
-}
+
 
 
 h4 {
