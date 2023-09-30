@@ -198,10 +198,10 @@ p {
     text-align: var(--TextAlign);
 }
 
-.skills,li {
+li {
     text-align: var(--TextAlign);
     line-height: 2.5;
-    list-style-type: circle;
+    list-style: circle;
 }
 
 .center {
