@@ -201,8 +201,7 @@ p {
 
 li {
     text-align: var(--TextAlign);
-    line-height: 2.5;
-    list-style: circle;
+    
 }
 
 .center {
