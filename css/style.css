@@ -1,463 +1,477 @@
-/* 
-Native CSS Variables (helps avoid repetitive coding) 
-Main colors used : 1b1b1b, 292929, ffa31a, white 
+/*
+Native CSS Variables (helps avoid repetitive coding)
+Main colors used : 1b1b1b, 292929, ffa31a, white
 */
 
 :root {
-    --EerieBlack: #1b1b1b;
-    --Gray16: #292929;
-    --Orange: #ffa31a;
-    --White: #ffffff;
-    --MediumGray: #494949;
-    --FontSize: 17px;
-    --TextAlign: Center;
-    --Padding: 10px;
+  --EerieBlack: #1b1b1b;
+  --Gray16: #292929;
+  --Orange: #ffa31a;
+  --White: #fff;
+  --MediumGray: #494949;
+  --FontSize: 17px;
+  --TextAlign: Center;
+  --Padding: 10px;
 }
+
 * {
-    box-sizing: border-box;
-    font-family: 'Victor Mono', monospace;
-
+  box-sizing: border-box;
+  font-family: 'Victor Mono', monospace;
 }
 
-.page-header {  /* Top next to logo - black  */
-    background-color: var(--EerieBlack);
-    display: flex;
-   /* width: 100%; */
-    padding: var(--Padding);      
+.page-header {
+  /* Top next to logo - black  */
+  background-color: var(--EerieBlack);
+  display: flex;
+
+  /* width: 100%; */
+  padding: var(--Padding);
 }
 
 .page-header__item {
-    flex: 0 1 200px;
+  flex: 0 1 200px;
 }
 
 .page-header__item:last-child {
-    flex-grow: 1;
-    text-align: right;
+  flex-grow: 1;
+  text-align: right;
 }
-
 
 .main-navigation {
-    padding: var(--Padding);
-    
+  padding: var(--Padding);
 }
 
-.navigation-list__item { 
-    background-color:var(--EerieBlack);
-    font-size: var(--FontSize);   
+.navigation-list__item {
+  background-color: var(--EerieBlack);
+  font-size: var(--FontSize);
 }
 
 .navigation-list li {
-    display: inline-block;
-    margin-left: 15px;
+  display: inline-block;
+  margin-left: 15px;
 }
 
 .profile_portrait {
-    float: left; 
-    width: 250px;
-    margin-right: 40px;
-    border-radius: 40%;
+  float: left;
+  width: 250px;
+  margin-right: 40px;
+  border-radius: 40%;
 }
 
 body {
-    background-color: var(--MediumGray);
-    font-size: var(--FontSize);
-    color: var(--White);
+  background-color: var(--MediumGray);
+  font-size: var(--FontSize);
+  color: var(--White);
 }
 
 a {
-    color: var(--Orange);
-    text-align: right;
+  color: var(--Orange);
+  text-align: right;
 }
 
 h1 {
-    color: var(--Orange);
-    font-size: 30px;
-    text-align: var(--TextAlign);
+  color: var(--Orange);
+  font-size: 30px;
+  text-align: var(--TextAlign);
 }
 
 h2 {
-    color:var(--Orange);
-    font-size: 20px;
-    text-align: var(--TextAlign);
+  color: var(--Orange);
+  font-size: 20px;
+  text-align: var(--TextAlign);
 }
 
 h3 {
-    color: var(--Orange);
-    font-size: var(--FontSize);
-    text-align: var(--TextAlign);
+  color: var(--Orange);
+  font-size: var(--FontSize);
+  text-align: var(--TextAlign);
 }
 
-
-
 h4 {
-    color: var(--Orange);
-    font-size: var(--FontSize);
-    text-align: var(--TextAlign);
+  color: var(--Orange);
+  font-size: var(--FontSize);
+  text-align: var(--TextAlign);
 }
 
 div {
-    color: var(--White);
-    font-size:var(--FontSize);
-    line-height: 1.5;
+  color: var(--White);
+  font-size: var(--FontSize);
+  line-height: 1.5;
 }
 
 button,
 .button {
-    background-color: #a76800;
-    color: var(--White);
+  background-color: #a76800;
+  color: var(--White);
 }
 
-.button, button {
-    /* overwrites browser defaults and resets the border */
-    border: solid black;
-    display: inline-block;
-    /* takes the font from the outer container */
-    font-family: inherit;
-    /* styles the button */
-    background-color: #357b70;
-    color: var(--White);
-    text-decoration:underline;
-    padding: var(--Padding);
-    border-radius: 3px;
-    /* width of the border, type, color */
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3); 
-    transition: opacity 0.2s;
+.button,
+button {
+  /* overwrites browser defaults and resets the border */
+  border: solid black;
+  display: inline-block;
+
+  /* takes the font from the outer container */
+  font-family: inherit;
+
+  /* styles the button */
+  background-color: #357b70;
+  color: var(--White);
+  text-decoration: underline;
+  padding: var(--Padding);
+  border-radius: 3px;
+
+  /* width of the border, type, color */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  transition: opacity 0.2s;
 }
 
-button:hover, 
+button:hover,
 button:focus,
 .button:hover,
 .button:focus {
-    background-color: #a76800;
-    color: var(--EerieBlack);
-    padding:var(--Padding);
-    border-radius: 3px;
-    cursor: pointer;
-    opacity: 0.6;
+  background-color: #a76800;
+  color: var(--EerieBlack);
+  padding: var(--Padding);
+  border-radius: 3px;
+  cursor: pointer;
+  opacity: 0.6;
 }
 
 button:active {
-    background-color: var(--MediumGray);
-    color: var(--Orange);
+  background-color: var(--MediumGray);
+  color: var(--Orange);
 }
 
 .page-footer {
-    background-color: var(--EerieBlack);
-    clear: both;
-    display: flex;
-    flex-direction: column;
-    text-align: var(--TextAlign);
-    margin-top: 8%;
+  background-color: var(--EerieBlack);
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  text-align: var(--TextAlign);
+  margin-top: 8%;
 }
 
 .profile {
-    max-width: 700px;
-    margin: 0 auto;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 .grid__item {
-    background-color: var(--Gray16);
-/* Start grid fallback */
-    display: inline-block;
-    width: 33%;
-/* end grid fallback */
+  background-color: var(--Gray16);
+
+  /* Start grid fallback */
+  display: inline-block;
+  width: 33%;
+
+  /* end grid fallback */
 }
 
 .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
 }
 
 .grid__item:last-child {
-    grid-column: 3 / 3;
-    grid-row: 1 / 3;
+  grid-column: 3 / 3;
+  grid-row: 1 / 3;
 }
 
 @supports (display: grid) {
-    .grid {
-        display: grid;
+  .grid {
+    display: grid;
+
     /* grid-template-cplumns: 300px 300px 300px; gractions are better than pixels - they are responsive */
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
     margin: 0;
-}
-.grid__item {
+  }
+
+  .grid__item {
     background-color: var(--Gray16);
     width: auto;
     min-height: auto;
-    margin: 0;  
-}
-.grid__item:last-child {
-    grid-column:  3 / 3;
+    margin: 0;
+  }
+
+  .grid__item:last-child {
+    grid-column: 3 / 3;
     grid-row: 1 / 3;
-}
+  }
 }
 
 p {
-    padding: 5%;
-    text-align: var(--TextAlign);
+  padding: 5%;
+  text-align: var(--TextAlign);
 }
 
 li {
-    text-align: var(--TextAlign);
-    line-height: 2.5;
-    list-style-type: circle;
+  text-align: var(--TextAlign);
+  line-height: 2.5;
+  list-style-type: circle;
 }
 
 .center {
-    border: 5px solid var(--EerieBlack);
-    margin-left: auto;  
-    margin-right: auto;
-    line-height: 2.5;
+  border: 5px solid var(--EerieBlack);
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 2.5;
 }
 
-table, th, td {
-    width: 30% ;
-    
+table,
+th,
+td {
+  width: 30%;
 }
 
 .container {
-    border-radius: 5px;
-    padding: 20px;
-    text-align: var(--TextAlign);
-    cursor: pointer;
-
+  border-radius: 5px;
+  padding: 20px;
+  text-align: var(--TextAlign);
+  cursor: pointer;
 }
 
- /* Trail for Navigation Animation, needs work */
+/* Trail for Navigation Animation, needs work */
 
-.navigation-list__item a:before, 
-.navigation-list__item  a:after {
-    position: absolute;
-    left: 0px;
-    width: 100%;
-    height: 2px;
-    background: var(--Orange);
-    content: "";
-    opacity: 0;
-    transition: all 0.3s;
+.navigation-list__item a::before,
+.navigation-list__item a::after {
+  position: absolute;
+  left: none;
+  width: 100%;
+  height: 2px;
+  background: var(--Orange);
+  content: "";
+  opacity: 0;
+  transition: all 0.3s;
 }
-.navigation-list__item a:before {
-    top: 0px;
-    transform: translateY(10px);
+
+.navigation-list__item a::before {
+  top: none;
+  transform: translateY(10px);
 }
-.navigation-list__item a:after {
-    bottom: 0px;
-    transform: translateY(-10px);
+
+.navigation-list__item a::after {
+  bottom: none;
+  transform: translateY(-10px);
 }
-.navigation-list__item  a:hover:before, 
-.navigation-list__item a:hover:after
- {
-    opacity: 1;
-    transform: translateY(0px);
+
+.navigation-list__item a:hover::before,
+.navigation-list__item a:hover::after {
+  opacity: 1;
+  transform: translateY(none);
 }
 
 /* CODES BELOW SHOULD ALWAYS BE LAST */
 
 @media all and (max-width: 500px) {
-    .grid {
-        grid-template-columns: 1fr;
-        grid-gap: 10px;
-    }
-    .grid__item:last-child {
-        grid-column: auto / auto;
-        grid-row: auto / auto;
-    }
-    h1 {
-        font-size: 22px;
-    }
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
 }
 
 @media all and (min-width: 500px) and (max-width: 750px) {
-    .grid {
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 10px;
-    }
-    .grid__item:last-child {
-        grid-column: auto / auto;
-        grid-row: auto / auto;
-    }
-    h1 {
-        font-size: 22px; 
-    }
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
 }
 
 @media all and (max-width: 750px) {
-    /* shared code */
-    .grid {
-        grid-template-columns: 1fr;
-    }
+  /* shared code */
+  .grid {
+    grid-template-columns: 1fr;
+  }
 }
+
 @media all and (min-width: 500px) and (max-width: 750px) {
-    .grid {
-        grid-template-columns: 1fr 1fr;
-    }
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
+
 @media all and (max-width: 750px) {
-    .grid {
-        grid-gap:10px;
-    }
-    .grid__item:last-child {
-        grid-column:  auto / auto;
-        grid-row: auto / auto;
-    }
-    h1 {
-        font-size: 22px;
-    }
+  .grid {
+    grid-gap: 10px;
+  }
+
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
 }
 
 @keyframes air_b-move {
-    from {
-        transform: translate(0, 10px);
-    }
-    to {
-        transform: translate(200px, 30px);
-    }
+  from {
+    transform: translate(0, 10px);
+  }
+
+  to {
+    transform: translate(200px, 30px);
+  }
 }
 
-.air_b { 
-    animation: 30s air_b-move infinite alternate linear;
-    
+.air_b {
+  animation: 30s air_b-move infinite alternate linear;
 }
 
 @keyframes air_b-move-reverse {
-    from {
-        transform: translate(446px, 48px);
-    }
-    to {
-        transform: translate(100px,48px);
-    }
-}
-/* Top Cloud */
-@keyframes top-cloud-move {
-    from {
-        transform: translate(0, 10px);
-    }
-    to {
-        transform: translate(200px, 30px);
-    }
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
 
-.top-cloud { 
-    animation: 30s top-cloud-move infinite alternate linear;
-    
+/* Top Cloud */
+@keyframes top-cloud-move {
+  from {
+    transform: translate(0, 10px);
+  }
+
+  to {
+    transform: translate(200px, 30px);
+  }
+}
+
+.top-cloud {
+  animation: 30s top-cloud-move infinite alternate linear;
 }
 
 @keyframes top-cloud-move-reverse {
-    from {
-        transform: translate(446px, 48px);
-    }
-    to {
-        transform: translate(100px,48px);
-    }
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
+
 /* Middle Cloud */
 
 @keyframes middle-cloud-move {
-    from {
-        transform: translate(0, 10px);
-    }
-    to {
-        transform: translate(200px, 30px);
-    }
+  from {
+    transform: translate(0, 10px);
+  }
+
+  to {
+    transform: translate(200px, 30px);
+  }
 }
 
-.middle-cloud { 
-    animation: 30s middle-cloud-move infinite alternate linear;
-    
+.middle-cloud {
+  animation: 30s middle-cloud-move infinite alternate linear;
 }
 
 @keyframes middle-cloud-move-reverse {
-    from {
-        transform: translate(446px, 48px);
-    }
-    to {
-        transform: translate(100px,48px);
-    }
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
 
 /* Left Cloud */
 
 @keyframes left-cloud-move {
-    from {
-        transform: translate(0, 10px);
-    }
-    to {
-        transform: translate(200px, 30px);
-    }
+  from {
+    transform: translate(0, 10px);
+  }
+
+  to {
+    transform: translate(200px, 30px);
+  }
 }
 
-.left-cloud { 
-    animation: 30s left-cloud-move infinite alternate linear;
-    
+.left-cloud {
+  animation: 30s left-cloud-move infinite alternate linear;
 }
 
 @keyframes left-cloud-move-reverse {
-    from {
-        transform: translate(446px, 48px);
-    }
-    to {
-        transform: translate(100px,48px);
-    }
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
+
 /* Right top cloud */
 
 @keyframes right-cloud-move {
-    from {
-        transform: translate(0, 10px);
-    }
-    to {
-        transform: translate(200px, 30px);
-    }
+  from {
+    transform: translate(0, 10px);
+  }
+
+  to {
+    transform: translate(200px, 30px);
+  }
 }
 
-.right-cloud { 
-    animation: 30s right-cloud-move infinite alternate linear;
-    
+.right-cloud {
+  animation: 30s right-cloud-move infinite alternate linear;
 }
 
 @keyframes right-cloud-move-reverse {
-    from {
-        transform: translate(446px, 48px);
-    }
-    to {
-        transform: translate(100px,48px);
-    }
-}
-/* Lower cloud above bridge */
-@keyframes lower-cloud-move {
-    from {
-        transform: translate(0, 10px);
-    }
-    to {
-        transform: translate(200px, 30px);
-    }
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
 
-.lower-cloud { 
-    animation: 30s lower-cloud-move infinite alternate linear;
-    
+/* Lower cloud above bridge */
+@keyframes lower-cloud-move {
+  from {
+    transform: translate(0, 10px);
+  }
+
+  to {
+    transform: translate(200px, 30px);
+  }
+}
+
+.lower-cloud {
+  animation: 30s lower-cloud-move infinite alternate linear;
 }
 
 @keyframes lower-cloud-move-reverse {
-    from {
-        transform: translate(446px, 48px);
-    }
-    to {
-        transform: translate(100px,48px);
-    }
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
