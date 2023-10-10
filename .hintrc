@@ -11,12 +11,6 @@
         ]
       }
     ],
-    "no-inline-styles": "off",
-    "axe/text-alternatives": [
-      "default",
-      {
-        "document-title": "off"
-      }
-    ]
+    "no-inline-styles": "off"
   }
 }
